@@ -1,0 +1,80 @@
+The options for length dimensions when describing your rocket design are as such:
+0. Metres (m)
+1. Decimetres (dm)
+2. Centimetres (cm)
+3. Millimetres (mm)
+Enter a number corresponding to a length dimension to use based on the above key: 3
+The options for mass dimensions when describing your rocket design are as such:
+0. Kilograms (kg)
+3. Grams (g)
+Enter a number corresponding to a mass dimension to use based on the above key: 0
+Do you want to import simulation input data from a previously generated file? [Y/N]: n
+How many stages are in your rocket? 1
+How long (maximum) do you expect the flight to last (s)? 35
+The recommended time step is 0.0035 seconds, based on 10000 steps.
+What time step do you want to use? 0.0035
+Type a description for these simulation settings: 
+You have the option to either describe the parameters of your rocket design,
+or import data from a file generated after previously going through this process.
+Do you want to import rocket design data from a previously generated file? [Y/N]: n
+Enter a value for the length of your rocket: 164
+Surface Finish Options
+1: Totally smooth surface
+2: Polished metal or wood
+3: Natural sheet metal
+4: Smooth matte paint finish
+5: Standard paint finish
+Enter a value based on the above key for the rocket's surface finish:  hh
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('eq')" style="font-weight:bold"> == </a>
+Arrays have incompatible sizes for this operation.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('changeInput', 'C:\Users\vijay\Downloads\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\changeInput.m', 24)" style="font-weight:bold">changeInput</a> (<a href="matlab: opentoline('C:\Users\vijay\Downloads\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\changeInput.m',24,0)">line 24</a>)
+		if 	( (nargin > 4) && (isempty(find(varName == varargin{1})) == false) ) ||...
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('KingsRockSim_beta_105', 'C:\Users\vijay\Downloads\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\KingsRockSim_beta_105.m', 1061)" style="font-weight:bold">KingsRockSim_beta_105</a> (<a href="matlab: opentoline('C:\Users\vijay\Downloads\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\KingsRockSim-MATLAB-Rocket-Trajectory-Simulation-master\KingsRockSim_beta_105.m',1061,0)">line 1061</a>)
+	[skinRoughness] = changeInput(simRunNum,'surface finish','Enter a value based on the above key for the rocket''s surface finish:  ',skinRoughness,[1,2,3,4,5]);
+
+<a href="matlab:helpview('matlab','error_sizeDimensionsMustMatch')" style="font-weight:bold">Related documentation</a>
+} 
+Trajectory
+{Error: <a href="matlab: opentoline('C:\Users\vijay\OneDrive\Desktop\Pinaka\14. MATLAB\Trajectory.m',32,7)">File: Trajectory.m Line: 32 Column: 7</a>
+Invalid expression. Check for missing or extra characters.
+} 
+Trajectory
+{Error: <a href="matlab: opentoline('C:\Users\vijay\OneDrive\Desktop\Pinaka\14. MATLAB\Trajectory.m',32,7)">File: Trajectory.m Line: 32 Column: 7</a>
+Invalid expression. Check for missing or extra characters.
+} 
+Trajectory
+{Error: <a href="matlab: opentoline('C:\Users\vijay\OneDrive\Desktop\Pinaka\14. MATLAB\Trajectory.m',32,7)">File: Trajectory.m Line: 32 Column: 7</a>
+Invalid expression. Check for missing or extra characters.
+} 
+Trajectory
+Trajectory
+
+mr =
+
+        8912
+
+
+mmc =
+
+        1655
+
+8912 + 1655
+
+ans =
+
+       10567
+
+ ans + 1270.08
+
+ans =
+
+   1.1837e+04
+
+Trajectory
+
+ans =
+
+       10781
+
