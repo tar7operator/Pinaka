@@ -29,10 +29,14 @@ altitude = zeros(size(t)); % Initial altitude (0 m)
 acc = zeros(size(t));
 i=1;
 
-rho = 
+df = @(v) 0.0040986 * v^2;
 
-df = @(v) 0.5 * rho * v^2 * Area * Cd
-% df = @(v) 0.0040986 * v^2;
+% Trigger mechanisms
+PayloadTriggered = 0;
+ParachuteTriggered = 0;
+
+
+
 
 while 1
 
@@ -51,6 +55,11 @@ while 1
     break;
     end
 
+    if altitude(i) >=960 && t(i) > max(tth) && ~PayloadTriggered
+        fprintf("Payload is being triggered at - \nAltitude %f \nVelocity %f \nAcceleration %f\n", altitude(i), velocity(i),  An(velocity(i)) );
+        PayloadTriggered = i;
+    end
+
     velocity(i+1) = vn;
     altitude(i+1) = an;
     
@@ -59,6 +68,9 @@ while 1
 end
 % fprintf("--------------------------------\n");
 ApT = i-1;
+
+
+
 while 1
 
     An= @(v) (df(v) - mass(i)*g)/mass(i);
@@ -81,7 +93,10 @@ while 1
 
     velocity(i+1) = vn;
     altitude(i+1) = an;
-
+    if velocity(i) <= -30 && ~ParachuteTriggered
+        fprintf("Parachute is being triggered at - \nAltitude %f \nVelocity %f \nAcceleration %f\n", altitude(i), velocity(i),  An(velocity(i)) );
+        ParachuteTriggered = i;
+    end
     % fprintf("(%f) Net Altitude: %f Net Velocity: %f Net Acceleration: %f \n", i, altitude(i), velocity(i),  An(velocity(i)) );
     
     i=i+1;
@@ -94,7 +109,13 @@ plot(t(1:i),altitude(1:i));
 xlabel('Time (s)');
 ylabel('Altitude (m)');
 title('Altitude');
+xline(t(ApT),'-r',{'Apogee', t(ApT)});
 yline(altitude(ApT),'-r',{'Apogee', altitude(ApT)});
+
+
+xline(t(ParachuteTriggered),'-g',{'Parachute', t(ParachuteTriggered)});
+yline(altitude(ParachuteTriggered),'-g',{'Parachute', altitude(ParachuteTriggered)});
+
 grid on;
 
 subplot(2, 1, 2);
@@ -102,4 +123,8 @@ plot(t(1:i),velocity(1:i));
 xlabel('Time (s)');
 ylabel('Vertical Velocity (m/s)');
 title('Vertical Velocity');
+xline(t(PayloadTriggered),'-r',{'Payload', t(PayloadTriggered)});
+yline(velocity(PayloadTriggered),'-r',{'Payload', velocity(PayloadTriggered)});
+
 grid on;
+
