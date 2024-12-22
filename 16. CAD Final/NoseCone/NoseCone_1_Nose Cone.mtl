@@ -1,7 +1,0 @@
-newmtl mat_1_Nose Cone
-illum 2
-Ns 225.00002
-d 1.0
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-Ks 0.25 0.25 0.25
