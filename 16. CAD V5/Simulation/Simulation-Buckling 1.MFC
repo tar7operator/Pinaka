@@ -1,0 +1,16 @@
+[StartTime]
+Simulation-Buckling 1.MFC=
+[SolverState]
+Simulation-Buckling 1.MFC=2
+[MainFrame]
+Simulation-Buckling 1.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMADAAAAADLBAAAAAEHEAAAAAGICAAAAA
+[ShowMin]
+Simulation-Buckling 1.MFC=yes
+[SolverType]
+Simulation-Buckling 1.MFC=Linear Analysis
+[StudyType]
+Simulation-Buckling 1.MFC=-1
+[StudyName]
+[Solver]
+Simulation-Buckling 1.MFC=Iterative
+[StudyName1]
