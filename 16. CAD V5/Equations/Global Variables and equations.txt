@@ -6,7 +6,7 @@
 "PayLoadBay_OD"= 170mm
 "ParachuteBay_Pitch"= 300mm
 "ElectronicsTray_PitchDist"= 50mm
-"ElectronicsTray_Height"= 120mm
+"ElectronicsTray_Height"= 140mm
 "MotorDia"= 98mm
 "MotorLen"= 289mm
 "NosePlateDia"= 156.6mm
