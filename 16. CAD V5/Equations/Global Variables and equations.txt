@@ -7,3 +7,5 @@
 "ParachuteBay_Pitch"= 300mm
 "ElectronicsTray_PitchDist"= 50mm
 "ElectronicsTray_Height"= 140mm
+"MotorDia"= 98mm
+"MotorLen"=289mm
